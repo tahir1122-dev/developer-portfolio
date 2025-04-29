@@ -1,17 +1,19 @@
 export const personalData = {
-  name: "ABU SAID",
-  profile: '/profile.png',
-  designation: "Software Developer",
-  description: "My name is ABU SAID. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
-  email: 'abusaid7388@gmail.com',
-  phone: '+8801608797655',
-  address: 'Middle Badda, Dhaka, Bangladesh - 1212 ',
-  github: 'https://github.com/said7388',
-  facebook: 'https://www.facebook.com/abusaid.riyaz/',
-  linkedIn: 'https://www.linkedin.com/in/abu-said-bd/',
-  twitter: 'https://twitter.com/said7388',
-  stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
-}
+  name: "Muhammad Tahir",
+  profile: "/profile.png",
+  designation: "Mern Stack Developer",
+  description:
+    "I'm Muhammad Tahir, a passionate Full Stack Developer with strong skills in JavaScript and the MERN stack. I’m a quick learner with a self-driven attitude, always exploring new technologies. I love solving problems and building web applications that make an impact. Open to opportunities that match my skills and enthusiasm for development.",
+  email: "tm0038763@gmail.com",
+  phone: "+92 307 5530466",
+  address: "Lahore Johar Town, Pakistan ",
+  github: "https://github.com/tahir1122-dev,",
+  facebook: "https://www.facebook.com/profile.php?id=100049569739355",
+  linkedIn: "https://www.linkedin.com/in/m-tahir-085887308/",
+  twitter: "https://x.com/",
+  stackOverflow: "https://wanologicalso-fi56867.slack.com/team/U08K0ERV8SU",
+  leetcode: "https://leetcode.com/tahir1122/",
+  devUsername: "Muhammad Tahir",
+  resume:
+    "https://docs.google.com/document/d/1gaAS1B3HKUAWZmxwYCeDpHJIoeytiVmt/edit?usp=sharing&ouid=105803473348718283956&rtpof=true&sd=true",
+};

@@ -102,12 +102,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Running with Docker Compose
 
 1. **Build Docker Image and Run Container**:
-    ```bash
-    docker-compose up --build
-    ```
+
+   ```bash
+   docker-compose up --build
+   ```
 
 2. **Access the Application**:
-    Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
+   Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
 
 ---
 
@@ -115,18 +116,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 1. **Build the Docker Image using Dockerfile.dev**:
 
-    ```bash
-    docker build -t nextjs-app -f Dockerfile.dev .
-    ```
+   ```bash
+   docker build -t nextjs-app -f Dockerfile.dev .
+   ```
 
 2. **Running the Docker Container**:
 
-    ```bash
-    docker run -p 3000:3000 nextjs-app
-    ```
+   ```bash
+   docker run -p 3000:3000 nextjs-app
+   ```
 
 3. **Access the Application**:
-    Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
+   Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
 
 ---
 
@@ -151,20 +152,20 @@ Eg:
 
 ```javascript
 export const personalData = {
-  name: "ABU SAID",
+  name: "Muhammad Tahir",
   profile: "/profile.png",
-  designation: "Full-Stack Software Developer",
-  description: "My name is ABU SAID....",
-  email: "abusaid7388@gmail.com",
-  phone: "+8801608797655",
-  address: "Dhaka, Bangladesh",
-  github: "https://github.com/said7388",
-  facebook: "https://www.facebook.com/abusaid.riyaz/",
-  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
-  twitter: "https://twitter.com/said7388",
-  stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
+  designation: "Mern-Stack Software Developer",
+  description: "My name is Muhammad Tahir",
+  email: "tm0038763@gmail.com",
+  phone: "+923075530466",
+  address: "Lahore, Pakistan",
+  github: "https://github.com/tahir1122-dev",
+  facebook: "https://www.facebook.com/profile.php?id=100049569739355",
+  linkedIn: "https://www.linkedin.com/in/m-tahir-085887308/",
+  twitter: "https://twitter.com",
+  stackOverflow: "https://stackoverflow.com/",
+  leetcode: "https://leetcode.com",
+  devUsername: "Muhammad Tahir",
   resume: "...",
 };
 ```
