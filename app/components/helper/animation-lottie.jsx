@@ -1,39 +1,48 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic';
-
-// Dynamically import Lottie with SSR disabled
-const Lottie = dynamic(() => import('lottie-react'), {
-  ssr: false,
-  loading: () => <div className="w-full h-full animate-pulse bg-gray-200 rounded"></div>
-});
+import { useEffect, useRef, useState } from 'react';
+import lottie from 'lottie-web';
 
 const AnimationLottie = ({ animationPath, width = '100%', height = '100%' }) => {
+  const containerRef = useRef(null);
   const [animationData, setAnimationData] = useState(null);
-  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
+    // Dynamically import the lottie animation data
+    const loadAnimation = async () => {
+      try {
+        const response = await fetch(animationPath);
+        const data = await response.json();
+        setAnimationData(data);
+      } catch (error) {
+        console.error('Failed to load animation:', error);
+      }
+    };
 
-    // Load animation data
-    if (animationPath) {
-      import(`../../public/lottie/${animationPath}`)
-        .then(module => setAnimationData(module.default))
-        .catch(err => console.error('Failed to load animation:', err));
-    }
+    loadAnimation();
   }, [animationPath]);
 
-  if (!isClient || !animationData) {
-    return <div className="w-full h-full animate-pulse bg-gray-200 rounded"></div>;
-  }
+  useEffect(() => {
+    if (!animationData || !containerRef.current) return;
+
+    const animation = lottie.loadAnimation({
+      container: containerRef.current,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+    });
+
+    return () => {
+      animation.destroy();
+    };
+  }, [animationData]);
 
   return (
-    <Lottie
-      animationData={animationData}
+    <div
+      ref={containerRef}
       style={{ width, height }}
-      loop={true}
-      autoplay={true}
+      className="animation-container"
     />
   );
 };
