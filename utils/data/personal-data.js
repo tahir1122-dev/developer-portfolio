@@ -9,7 +9,7 @@ export const personalData = {
   address: "Lahore Johar Town, Pakistan ",
   github: "https://github.com/tahir1122-dev,",
   facebook: "https://www.facebook.com/profile.php?id=100049569739355",
-  linkedIn: "https://www.linkedin.com/in/m-tahir-085887308/",
+  linkedIn: "https://www.linkedin.com/in/muhammad-tahir-085887308/",
   twitter: "https://x.com/",
   stackOverflow: "https://wanologicalso-fi56867.slack.com/team/U08K0ERV8SU",
   leetcode: "https://leetcode.com/tahir1122/",

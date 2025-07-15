@@ -1,6 +1,7 @@
 const path = require('path')
- 
-module.exports = {
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
@@ -23,4 +24,13 @@ module.exports = {
       },
     ],
   },
+  experimental: {
+    esmExternals: 'loose'
+  },
+  webpack: (config) => {
+    config.externals = [...config.externals, 'canvas', 'jsdom'];
+    return config;
+  }
 }
+
+module.exports = nextConfig;
