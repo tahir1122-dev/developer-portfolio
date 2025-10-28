@@ -1,9 +1,9 @@
 export const personalData = {
   name: "Muhammad Tahir",
   profile: "/profile.png",
-  designation: "Mern Stack Developer",
+  designation: "Full Stack Developer",
   description:
-    "I'm Muhammad Tahir, a passionate Full Stack Developer with strong skills in JavaScript and the MERN stack. I’m a quick learner with a self-driven attitude, always exploring new technologies. I love solving problems and building web applications that make an impact. Open to opportunities that match my skills and enthusiasm for development.",
+    "I'm Muhammad Tahir, a passionate Full Stack Developer with strong skills in JavaScript and the Full Stack. I’m a quick learner with a self-driven attitude, always exploring new technologies. I love solving problems and building web applications that make an impact. Open to opportunities that match my skills and enthusiasm for development.",
   email: "tm0038763@gmail.com",
   phone: "+92 307 5530466",
   address: "Lahore Johar Town, Pakistan ",

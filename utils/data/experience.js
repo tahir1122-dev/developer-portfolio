@@ -1,7 +1,7 @@
 export const experiences = [
   {
     id: 1,
-    title: "Mern Stack DEV",
+    title: "FullStack DEV",
     company: "Wanological Solutions",
     duration: "(Jan 2022 - Present)",
   },
